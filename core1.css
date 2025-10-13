@@ -1,0 +1,49 @@
+body {
+  background-color: #f6faff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+
+.caja1 {
+    background-color: aqua;
+    width: 99%;
+    margin: auto;
+    height: 120px;
+    border-radius: 6px;
+    padding: auto;
+    margin-top: 20px;
+}
+
+
+.imagen {
+    display: flex;
+    margin-left: 30px;
+    border-radius: 120px;
+    border: #f5f7fa 3px solid;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+
+.contenedor {
+    width: 99%;
+    background-color: #fbfcfd;
+}
+
+h1, h4, p {
+    margin-left: 30px;
+}
+
+.boton {
+    margin-left:30px;
+    background-color: beige;
+}
+
+h4, p {
+    font-size: 20px;
+}

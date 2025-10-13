@@ -1,0 +1,66 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="documento1.css/js">
+    <title>Ejemplos de Eventos en JavaScript</title>
+</head>
+
+<!-- evento que se dispara cuando la vista carga por primera vez -->
+<body onload="bienvenida()">
+
+  <h1>Ejemplos de Eventos Básicos en JavaScript</h1>
+
+  <!-- evento onclick -->
+  <section>
+    <h2>1. Evento <code>onclick</code></h2>
+    <button onclick="saludar()">Haz clic aquí</button>
+  </section>
+
+  <!-- evento onmouseover y onmouseout -->
+  <section>
+    <h2>2. Eventos <code>onmouseover</code> y <code>onmouseout</code></h2>
+    <div id="cajaMouse"
+         onmouseover="this.style.backgroundColor='lightblue'"
+         onmouseout="this.style.backgroundColor='white'">
+      Pasa el mouse por aquí
+    </div>
+  </section>
+
+  <!-- evento onchange -->
+  <section>
+    <h2>3. Evento <code>onchange</code></h2>
+    <select onchange="mostrarSeleccion(this.value)">
+      <option value="">Selecciona una fruta</option>
+      <option value="Manzana">Manzana</option>
+      <option value="Platano">Plátano</option>
+      <option value="Uva">Uva</option>
+    </select>
+    <p id="resultadoFruta"></p>
+  </section>
+
+  <!-- evento onkeydown -->
+  <section>
+    <h2>4. Evento <code>onkeydown</code></h2>
+    <input type="text" placeholder="Escribe algo..." onkeydown="detectarTecla(event)">
+  </section>
+
+  <!-- evento con addEventListener -->
+  <section>
+    <h2>5. Evento con <code>addEventListener</code></h2>
+    <button id="botonModerno">Click moderno</button>
+  </section>
+
+  <!-- evento onsubmit -->
+  <section>
+    <h2>6. Evento <code>onsubmit</code></h2>
+    <form onsubmit="return validarFormulario()">
+      <input type="text" id="nombre" placeholder="Tu nombre">
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+<script src="assets/js/scripts.js"></script>
+
+</body>
+</html>
